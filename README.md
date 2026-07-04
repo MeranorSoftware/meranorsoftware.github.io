@@ -6,7 +6,7 @@ Tagline: **Build What Matters.**
 
 ## Live Site
 
-This repository is intended for GitHub Pages and should publish from the root of the `main` branch:
+This repository publishes the Meranor website through GitHub Pages from the root of the `main` branch:
 
 ```text
 https://meranorsoftware.github.io
@@ -19,8 +19,8 @@ https://meranorsoftware.github.io
 - `app.js` — minimal progressive enhancement for the mobile menu
 - `assets/` — production brand, hero, product, founder, and workshop imagery
 - `founder/` — founder page
-- `workshop/` — static workshop/article pages
-- `docs/` — project notes and handoffs
+- `workshop/` — public workshop notes, product thinking, and build notes
+- `docs/` — project notes and internal handoffs retained for context
 
 ## Local Preview
 
@@ -52,3 +52,7 @@ Meranor currently presents these active or emerging product efforts honestly:
 - Geomancer
 - PatchCube
 - CountLens
+
+## Public Content Notes
+
+The Workshop contains public-facing product thinking and Build Notes. Build Notes translate project changelog milestones into readable public updates without exposing internal implementation noise.

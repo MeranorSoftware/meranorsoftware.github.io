@@ -1,11 +1,501 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Meranor Software</title>
-</head>
-<body>
-  <h1>Welcome to Meranor Software!</h1>
-  <p>This site is under construction.</p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Meranor creates thoughtful software that helps people observe, create, and understand more."
+    />
+    <meta name="color-scheme" content="dark" />
+    <title>Meranor | Build What Matters.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" as="image" href="assets/hero/meranor-hero-sunset-mountains.png" />
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <symbol id="icon-fieldkeeper" viewBox="0 0 48 48">
+        <path d="M30 8c-7.2.6-12.7 4-16.4 10.2-2.5 4.3-3.2 9.2-2 14.6 4.7 1.2 9.2.5 13.5-2.1C31.4 27.1 35 21.8 36 15" />
+        <path d="M15 34c3.3-4.5 7.3-8.1 11.8-10.8 2.2-1.3 4.6-2.2 7.2-2.8" />
+      </symbol>
+      <symbol id="icon-astra" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="13" />
+        <circle cx="24" cy="24" r="4.5" />
+        <path d="M24 7v6" />
+        <path d="M24 35v6" />
+        <path d="M7 24h6" />
+        <path d="M35 24h6" />
+      </symbol>
+      <symbol id="icon-geomancer" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="13" />
+        <path d="M11 24h26" />
+        <path d="M24 11c-4 3.7-6 8-6 13s2 9.3 6 13" />
+        <path d="M24 11c4 3.7 6 8 6 13s-2 9.3-6 13" />
+        <circle cx="24" cy="24" r="3.5" />
+      </symbol>
+      <symbol id="icon-patchcube" viewBox="0 0 48 48">
+        <path d="M24 8 36 15v18L24 40 12 33V15Z" />
+        <path d="M24 8v14" />
+        <path d="M12 15l12 7 12-7" />
+        <path d="M24 22v18" />
+      </symbol>
+      <symbol id="icon-countlens" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="14" />
+        <circle cx="24" cy="24" r="4" />
+        <path d="M24 10v6" />
+        <path d="M24 32v6" />
+        <path d="M10 24h6" />
+        <path d="M32 24h6" />
+      </symbol>
+      <symbol id="icon-mission" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="14" />
+        <path d="m24 11 2.6 8.2L35 24l-8.4 4.8L24 37l-2.6-8.2L13 24l8.4-4.8Z" />
+      </symbol>
+      <symbol id="icon-intention" viewBox="0 0 48 48">
+        <path d="m14 32 10-16" />
+        <path d="m22 36 10-16" />
+        <path d="m10 20 10-16" />
+      </symbol>
+      <symbol id="icon-intelligence" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="12" />
+        <circle cx="24" cy="24" r="4.5" />
+      </symbol>
+      <symbol id="icon-endure" viewBox="0 0 48 48">
+        <path d="M24 9 36 15 24 21 12 15Z" />
+        <path d="M24 19 36 25 24 31 12 25Z" />
+        <path d="M24 29 36 35 24 41 12 35Z" />
+      </symbol>
+      <symbol id="icon-impact" viewBox="0 0 48 48">
+        <path d="M24 8v10" />
+        <path d="M24 30v10" />
+        <path d="M8 24h10" />
+        <path d="M30 24h10" />
+        <path d="m14 14 7 7" />
+        <path d="m27 27 7 7" />
+        <path d="m14 34 7-7" />
+        <path d="m27 21 7-7" />
+      </symbol>
+    </svg>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="brand" href="index.html" aria-label="Meranor home">
+            <img
+              class="brand__mark"
+              src="assets/brand/makers-mark-vector.png"
+              alt=""
+              width="160"
+              height="160"
+            />
+            <span class="brand__wordmark">Meranor</span>
+          </a>
+
+          <button
+            class="site-header__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            Menu
+          </button>
+
+          <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+            <a href="#products">Products</a>
+            <a href="#philosophy">Philosophy</a>
+            <a href="workshop/index.html">Workshop</a>
+            <a href="#about">About</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="hero">
+          <div class="hero__atmosphere" aria-hidden="true"></div>
+          <div class="section-frame hero__frame">
+            <div class="hero__content">
+              <div class="hero__identity">
+                <img
+                  class="hero__mark"
+                  src="assets/brand/makers-mark-vector.png"
+                  alt=""
+                  width="160"
+                  height="160"
+                />
+                <p class="hero__eyebrow">Thoughtful software for curious people</p>
+                <h1 class="hero__title">Meranor</h1>
+                <p class="hero__tagline">Build What Matters.</p>
+                <p class="hero__statement">
+                  We create thoughtful software that helps people observe,
+                  create, and understand more.
+                </p>
+                <div class="button-row">
+                  <a class="button button--primary" href="#products">
+                    Explore Our Software
+                  </a>
+                  <a class="button button--secondary" href="#philosophy">
+                    Our Philosophy
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="products">
+          <div class="section-frame">
+            <div class="panel products-panel">
+              <div class="section-heading">
+                <p class="kicker">What We're Building</p>
+                <h2>A growing ecosystem of intelligent software.</h2>
+                <p class="lede">
+                  Meranor is a parent software, AI, and technology company.
+                  The products below are shown honestly at their current stage
+                  of development.
+                </p>
+              </div>
+
+              <div class="product-grid">
+                <article class="product-card product-card--fieldkeeper" id="product-fieldkeeper">
+                  <div class="product-card__media">
+                    <img src="assets/products/fieldkeeper-card-preview.png" alt="FieldKeeper product preview showing nature observation software and field journal imagery" loading="lazy" />
+                  </div>
+                  <div class="product-card__glyph" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><use href="#icon-fieldkeeper"></use></svg>
+                  </div>
+                  <p class="product-card__status">Planned flagship</p>
+                  <h3>FieldKeeper</h3>
+                  <p class="product-card__headline">
+                    A calm, intelligent field journal for discovering,
+                    recording, and understanding the natural world.
+                  </p>
+                  <p class="product-card__detail">
+                    First flagship. In active design and development.
+                  </p>
+                </article>
+
+                <article class="product-card product-card--astra" id="product-astra-ai">
+                  <div class="product-card__media">
+                    <img src="assets/products/astra-card-preview.png" alt="Astra AI product preview showing an intelligent companion interface" loading="lazy" />
+                  </div>
+                  <div class="product-card__glyph" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><use href="#icon-astra"></use></svg>
+                  </div>
+                  <p class="product-card__status">In development</p>
+                  <h3>Astra AI</h3>
+                  <p class="product-card__headline">
+                    An intelligent personal AI companion designed to listen,
+                    see, learn, remember, and assist.
+                  </p>
+                  <p class="product-card__detail">
+                    Exploratory work in progress. Not presented as a public release.
+                  </p>
+                </article>
+
+                <article class="product-card product-card--geomancer" id="product-geomancer">
+                  <div class="product-card__media">
+                    <img src="assets/products/geomancer-card-preview.png" alt="Geomancer product preview showing local AI assisted 3D model creation" loading="lazy" />
+                  </div>
+                  <div class="product-card__glyph" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><use href="#icon-geomancer"></use></svg>
+                  </div>
+                  <p class="product-card__status">In development</p>
+                  <h3>Geomancer</h3>
+                  <p class="product-card__headline">
+                    A local-first AI-assisted tool for creating and iterating
+                    deterministic 3D models.
+                  </p>
+                  <p class="product-card__detail">
+                    Built around controllable, repeatable creative workflows.
+                  </p>
+                </article>
+
+                <article class="product-card product-card--patchcube" id="product-patchcube">
+                  <div class="product-card__media">
+                    <img src="assets/products/patchcube-card-preview.png" alt="PatchCube product preview showing patch management and systems dashboard imagery" loading="lazy" />
+                  </div>
+                  <div class="product-card__glyph" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><use href="#icon-patchcube"></use></svg>
+                  </div>
+                  <p class="product-card__status">Early concept</p>
+                  <h3>PatchCube</h3>
+                  <p class="product-card__headline">
+                    Intelligent patch-management software for modern systems.
+                  </p>
+                  <p class="product-card__detail">
+                    Concept-stage direction focused on clarity and operational confidence.
+                  </p>
+                </article>
+
+                <article class="product-card product-card--countlens" id="product-countlens">
+                  <div class="product-card__media">
+                    <img src="assets/products/countlens-card-preview.png" alt="CountLens product preview showing inventory reconciliation dashboard imagery" loading="lazy" />
+                  </div>
+                  <div class="product-card__glyph" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><use href="#icon-countlens"></use></svg>
+                  </div>
+                  <p class="product-card__status">Internal development</p>
+                  <h3>CountLens</h3>
+                  <p class="product-card__headline">
+                    Inventory reconciliation and reporting software designed to
+                    turn difficult exports into clear, actionable information.
+                  </p>
+                  <p class="product-card__detail">
+                    In development for practical operations and internal workflows.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="fieldkeeper">
+          <div class="section-frame">
+            <div class="panel feature-panel">
+              <figure class="feature-panel__visual feature-panel__visual--image">
+                <img
+                  src="assets/products/fieldkeeper-featured-preview.png"
+                  alt="FieldKeeper featured product preview showing desktop and mobile nature observation interfaces"
+                  loading="lazy"
+                />
+              </figure>
+
+              <div class="feature-panel__content">
+                <p class="kicker">Featured Product</p>
+                <h2>FieldKeeper</h2>
+                <p class="lede">
+                  FieldKeeper is Meranor's first flagship in progress: a calm,
+                  intelligent field journal for discovering, recording, and
+                  understanding the natural world.
+                </p>
+                <p class="body-copy">
+                  It is being shaped to help people notice more, identify what
+                  they are seeing, and return to their observations with enough
+                  context to uncover deeper patterns over time.
+                </p>
+                <ul class="feature-list">
+                  <li>Beautiful field journal experience</li>
+                  <li>Species identification and tracking</li>
+                  <li>Insights that help you understand nature</li>
+                </ul>
+                <div class="button-row">
+                  <a
+                    class="button button--primary"
+                    href="workshop/building-software-like-naturalists-build-field-guides.html"
+                  >
+                    Explore FieldKeeper
+                  </a>
+                  <a class="button button--secondary" href="workshop/index.html">
+                    Visit the Workshop
+                  </a>
+                </div>
+                <p class="meta-note">
+                  Preview direction only. FieldKeeper is still in development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="workshop">
+          <div class="section-frame">
+            <div class="section-heading section-heading--centered">
+              <p class="kicker">From the Workshop</p>
+              <h2>Building in public. Learning in the open.</h2>
+              <p class="lede">
+                Preview sample content for the long-term workshop. These pages
+                establish tone and structure while the editorial workflow is
+                still taking shape.
+              </p>
+            </div>
+
+            <div class="workshop-grid">
+              <article class="workshop-card">
+                <a class="workshop-card__link" href="workshop/building-software-like-naturalists-build-field-guides.html">
+                  <div class="workshop-card__thumb"><img src="assets/workshop/workshop-naturalist-guides.png" alt="Naturalist desk with field guides, notes, and FieldKeeper inspiration" loading="lazy" /></div>
+                  <div class="workshop-card__body">
+                    <p class="workshop-card__meta">Preview sample article</p>
+                    <h3>Building software like naturalists build field guides</h3>
+                    <p>
+                      Observation-first product design, calm software, and the
+                      early FieldKeeper mindset.
+                    </p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="workshop-card">
+                <a class="workshop-card__link" href="workshop/why-local-first-ai-matters-to-us.html">
+                  <div class="workshop-card__thumb"><img src="assets/workshop/workshop-local-first-ai.png" alt="Local-first AI workspace with private machine and thoughtful interface" loading="lazy" /></div>
+                  <div class="workshop-card__body">
+                    <p class="workshop-card__meta">Preview sample article</p>
+                    <h3>Why local-first AI matters to us</h3>
+                    <p>
+                      Trust, resilience, and keeping intelligence close to the
+                      work.
+                    </p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="workshop-card">
+                <a class="workshop-card__link" href="workshop/the-value-of-building-slow-and-building-right.html">
+                  <div class="workshop-card__thumb"><img src="assets/workshop/workshop-building-slow.png" alt="Warm workshop scene about deliberate long-term software craft" loading="lazy" /></div>
+                  <div class="workshop-card__body">
+                    <p class="workshop-card__meta">Preview sample article</p>
+                    <h3>The value of building slow and building right</h3>
+                    <p>
+                      Long-horizon product craft, intentional scope, and durable decisions.
+                    </p>
+                  </div>
+                </a>
+              </article>
+            </div>
+
+            <div class="section-actions">
+              <a class="button button--secondary" href="workshop/index.html">
+                Explore the Workshop
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="about">
+          <div class="section-frame">
+            <div class="panel mission-panel">
+              <div class="mission-panel__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><use href="#icon-mission"></use></svg>
+              </div>
+              <div class="mission-panel__copy">
+                <p class="kicker">Our Mission</p>
+                <h2>
+                  We believe meaningful technology should empower curiosity,
+                  not distract from it.
+                </h2>
+              </div>
+              <div class="mission-panel__support mission-panel__support--with-founder">
+                <p>
+                  Meranor builds software, AI, and technology intended to help
+                  people observe more, create with intention, and understand the
+                  world more clearly.
+                </p>
+                <a class="founder-link" href="founder/index.html">
+                  Meet our Founder, Josh! <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="philosophy">
+          <div class="section-frame">
+            <div class="panel principles-panel">
+              <div class="section-heading section-heading--centered">
+                <p class="kicker">Our Principles</p>
+                <h2>What guides the way we build.</h2>
+              </div>
+
+              <div class="principles-grid">
+                <article class="principle-card">
+                  <div class="principle-card__glyph" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><use href="#icon-intention"></use></svg>
+                  </div>
+                  <h3>Built with Intention</h3>
+                  <p>We start with purpose and act with clarity.</p>
+                </article>
+
+                <article class="principle-card">
+                  <div class="principle-card__glyph" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><use href="#icon-intelligence"></use></svg>
+                  </div>
+                  <h3>Driven by Intelligence</h3>
+                  <p>We use technology to solve meaningful problems.</p>
+                </article>
+
+                <article class="principle-card">
+                  <div class="principle-card__glyph" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><use href="#icon-endure"></use></svg>
+                  </div>
+                  <h3>Designed to Endure</h3>
+                  <p>We build with quality, craftsmanship, and long-term thinking.</p>
+                </article>
+
+                <article class="principle-card">
+                  <div class="principle-card__glyph" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><use href="#icon-impact"></use></svg>
+                  </div>
+                  <h3>Focused on Impact</h3>
+                  <p>We create solutions that help, inspire, and empower people to do more.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="section-frame">
+          <div class="site-footer__grid">
+            <div class="site-footer__brand">
+              <a class="brand brand--footer" href="index.html" aria-label="Meranor home">
+                <img
+                  class="brand__mark"
+                  src="assets/brand/makers-mark-vector.png"
+                  alt=""
+                  width="160"
+                  height="160"
+                />
+                <span class="brand__wordmark">Meranor</span>
+              </a>
+              <p>Thoughtful software for curious people.</p>
+            </div>
+
+            <div>
+              <h2 class="site-footer__title">Products</h2>
+              <ul class="site-footer__list">
+                <li><a href="#product-fieldkeeper">FieldKeeper</a></li>
+                <li><a href="#product-astra-ai">Astra AI</a></li>
+                <li><a href="#product-geomancer">Geomancer</a></li>
+                <li><a href="#product-patchcube">PatchCube</a></li>
+                <li><a href="#product-countlens">CountLens</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="site-footer__title">Company</h2>
+              <ul class="site-footer__list">
+                <li><a href="#about">About Meranor</a></li>
+                <li><a href="founder/index.html">Meet Josh</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#fieldkeeper">FieldKeeper Spotlight</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="site-footer__title">Resources</h2>
+              <ul class="site-footer__list">
+                <li><a href="workshop/index.html">Workshop Preview</a></li>
+                <li>Brand foundation</li>
+                <li>Static local foundation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer__bottom">
+            <p>&copy; <span data-current-year>2026</span> Meranor.</p>
+            <p>No public launch claims. No external dependencies.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
 </html>
+
+

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Local-first AI workshop thumbnail</title>
+  <desc id="desc">A dark workshop desk with a local machine, intelligence rings, and connected nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#101926"/>
+      <stop offset=".58" stop-color="#0a0d12"/>
+      <stop offset="1" stop-color="#060708"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="44%" cy="42%" r="48%">
+      <stop stop-color="#446cb5" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="520" rx="28" fill="url(#bg)"/>
+  <rect width="900" height="520" rx="28" fill="url(#glow)"/>
+  <rect x="112" y="332" width="676" height="72" rx="22" fill="#11161d" stroke="#313b4a"/>
+  <rect x="270" y="136" width="360" height="210" rx="28" fill="#0d1117" stroke="#38465c" stroke-width="2"/>
+  <circle cx="450" cy="240" r="72" fill="none" stroke="#6e8fda" stroke-width="4" opacity=".9"/>
+  <circle cx="450" cy="240" r="22" fill="#dde8ff"/>
+  <circle cx="450" cy="240" r="8" fill="#203d7a"/>
+  <path d="M450 146v30M450 304v30M356 240h30M514 240h30" stroke="#d7b46d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M218 368h464" stroke="#f2eee6" stroke-opacity=".16" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="245" cy="368" r="10" fill="#d7b46d"/>
+  <circle cx="486" cy="368" r="10" fill="#6e8fda"/>
+  <circle cx="660" cy="368" r="10" fill="#6e8fda"/>
+</svg>

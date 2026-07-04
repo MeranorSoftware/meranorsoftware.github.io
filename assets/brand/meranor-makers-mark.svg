@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="meranor-mark-title">
+  <title id="meranor-mark-title">Meranor maker's mark</title>
+  <defs>
+    <mask id="meranor-makers-mark-cuts" maskUnits="userSpaceOnUse">
+      <rect width="160" height="160" rx="30" fill="#ffffff" />
+      <path d="M60 16 22 56v88" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="22" />
+      <path d="M116 30 80 72v74" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="22" />
+    </mask>
+  </defs>
+  <rect width="160" height="160" rx="30" fill="#f2eee6" mask="url(#meranor-makers-mark-cuts)" />
+</svg>

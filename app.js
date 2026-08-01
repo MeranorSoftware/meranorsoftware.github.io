@@ -11,12 +11,24 @@ const assetPolishPages = new Set([
 const currentPage = document.body?.dataset.page;
 
 if (assetPolishPages.has(currentPage)) {
-  const assetPolishStylesheet = document.createElement("link");
-  assetPolishStylesheet.rel = "stylesheet";
-  assetPolishStylesheet.href = currentPage === "home"
-    ? "asset-polish.css"
-    : "../asset-polish.css";
-  document.head.appendChild(assetPolishStylesheet);
+  const isHomePage = currentPage === "home";
+  const relativePrefix = isHomePage ? "" : "../";
+  const stylesheetPaths = [`${relativePrefix}asset-polish.css`];
+
+  if (currentPage === "home" || currentPage === "autonotrek") {
+    stylesheetPaths.push(`${relativePrefix}asset-media-autonotrek.css`);
+  }
+
+  if (currentPage === "home" || currentPage === "unosolu") {
+    stylesheetPaths.push(`${relativePrefix}asset-media-unosolu.css`);
+  }
+
+  stylesheetPaths.forEach((href) => {
+    const stylesheet = document.createElement("link");
+    stylesheet.rel = "stylesheet";
+    stylesheet.href = href;
+    document.head.appendChild(stylesheet);
+  });
 }
 
 const nav = document.getElementById("site-nav");

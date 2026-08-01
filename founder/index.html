@@ -2,17 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta
       name="description"
-      content="Meet Josh Welch, founder of Meranor, a builder of thoughtful software, AI, and technology."
+      content="Meet Josh Welch, founder of Meranor Systems and builder of AutonoTrek and UnoSolu."
     />
     <meta name="color-scheme" content="dark" />
-    <title>Meet Josh Welch | Founder of Meranor</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <title>Josh Welch | Founder of Meranor Systems</title>
+    <link rel="stylesheet" href="../meranor-systems.css" />
+    <style>
+      .founder-panel__portrait { position: relative; margin: 0; overflow: hidden; }
+      .founder-panel__portrait img { display: block; width: 100%; height: 100%; min-height: 430px; object-fit: cover; object-position: center 24%; }
+      .founder-panel__portrait figcaption { position: absolute; left: 1rem; right: 1rem; bottom: 1rem; padding: .75rem 1rem; border: 1px solid rgba(255,255,255,.16); border-radius: 999px; background: rgba(5,8,12,.8); color: #f3f4f6; font-size: .72rem; letter-spacing: .14em; text-align: center; text-transform: uppercase; backdrop-filter: blur(12px); }
+      .founder-quote { margin: 2rem 0 0; padding: 1.4rem 0 1.4rem 1.4rem; border-left: 2px solid #ff9a00; color: #f3f4f6; font-family: "Space Grotesk", "Aptos Display", "Bahnschrift", sans-serif; font-size: clamp(1.2rem,2.5vw,1.7rem); line-height: 1.45; }
+    </style>
   </head>
   <body data-page="founder">
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -20,123 +23,116 @@
     <div class="page-shell">
       <header class="site-header">
         <div class="site-header__inner">
-          <a class="brand" href="../index.html" aria-label="Meranor home">
-            <img
-              class="brand__mark"
-              src="../assets/brand/makers-mark-vector.png"
-              alt=""
-              width="160"
-              height="160"
-            />
-            <span class="brand__wordmark">Meranor</span>
+          <a class="brand" href="../" aria-label="Meranor Systems home">
+            <span class="brand__mark" aria-hidden="true"><span></span></span>
+            <span class="brand__lockup"><strong>Meranor</strong><small>Systems</small></span>
           </a>
-
-          <button
-            class="site-header__toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="site-nav"
-          >
-            Menu
-          </button>
-
+          <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
           <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-            <a href="../index.html#products">Products</a>
-            <a href="../index.html#philosophy">Philosophy</a>
-            <a href="../workshop/index.html">Workshop</a>
-            <a href="index.html" aria-current="page">Founder</a>
+            <a href="../autonotrek/">AutonoTrek</a>
+            <a href="../unosolu/">UnoSolu</a>
+            <a aria-current="page" href="../company/">Company</a>
+            <a class="nav-cta" href="../contact/">Contact</a>
           </nav>
         </div>
       </header>
 
-      <main id="main-content" class="founder-page">
-        <section class="founder-hero">
-          <div class="founder-hero__atmosphere" aria-hidden="true"></div>
-          <div class="section-frame">
-            <div class="panel founder-card">
-              <div class="founder-card__portrait-wrap">
-                <img
-                  class="founder-card__portrait"
-                  src="../assets/founder-josh.jpg"
-                  alt="Portrait of Josh Welch, founder of Meranor"
-                  width="900"
-                  height="1125"
-                />
-              </div>
+      <main id="main-content">
+        <section class="simple-hero">
+          <div class="section-frame simple-hero__grid">
+            <div>
+              <p class="eyebrow">Founder of Meranor Systems</p>
+              <h1>Josh Welch</h1>
+            </div>
+            <p class="hero__lede">
+              Inventory professional, hands-on builder, and relentlessly curious
+              problem-solver turning operational friction into systems worth using.
+            </p>
+          </div>
+        </section>
 
-              <div class="founder-card__copy">
-                <p class="kicker">Meet our Founder</p>
-                <h1>Josh Welch</h1>
-                <p class="founder-card__role">
-                  Builder. Designer. Problem-solver. Curious by nature.
-                </p>
-                <p class="lede">
-                  Meranor began with a simple belief: if something can help
-                  people, teach people, or make life a little more meaningful,
-                  it is worth building.
-                </p>
-                <p class="body-copy">
-                  Josh created Meranor as a home for thoughtful software, AI,
-                  and technology projects — tools built from curiosity, refined
-                  through real use, and shaped by the belief that ordinary people
-                  can build extraordinary things when they keep learning.
-                </p>
-                <div class="founder-card__quote">
-                  <p>
-                    “I want Meranor to prove that you do not have to wait for
-                    permission to build something meaningful. You can start with
-                    curiosity, learn as you go, and build what matters.”
-                  </p>
-                </div>
-                <div class="button-row button-row--left">
-                  <a class="button button--primary" href="../index.html#products">
-                    See What We’re Building
-                  </a>
-                  <a class="button button--secondary" href="../index.html">
-                    Back to Meranor
-                  </a>
-                </div>
-              </div>
+        <section class="section section--dark">
+          <div class="section-frame founder-panel founder-panel--feature">
+            <figure class="founder-panel__portrait">
+              <img
+                src="../assets/founder-josh.jpg"
+                alt="Portrait of Josh Welch, founder of Meranor Systems"
+                width="900"
+                height="1125"
+              />
+              <figcaption>Josh Welch · Missouri</figcaption>
+            </figure>
+            <div>
+              <p class="eyebrow">Operator turned builder</p>
+              <h2>Meranor started with a simple question: why does the system make the real work harder?</h2>
+              <p>
+                Josh founded Meranor after years of working close to inventory,
+                purchasing, warehouse processes, and the people accountable when the
+                records and physical reality do not agree. The product ideas began as
+                practical responses to that friction—not as technology looking for a
+                problem.
+              </p>
+              <p>
+                AutonoTrek grew from the challenge of collecting trustworthy inventory
+                evidence in physical environments. UnoSolu grew from the broader need to
+                connect the records, decisions, and teams surrounding that work.
+              </p>
+              <blockquote class="founder-quote">
+                “Build the thing that would have made the work clearer, then make sure
+                the people doing the work remain in control.”
+              </blockquote>
             </div>
           </div>
         </section>
 
-        <section class="section founder-story" id="why-meranor">
+        <section class="section">
           <div class="section-frame">
-            <div class="founder-story__grid">
-              <article class="panel founder-story__panel">
-                <p class="kicker">Why Meranor Exists</p>
-                <h2>To turn curiosity into useful, thoughtful technology.</h2>
-                <p>
-                  Meranor is built around a hands-on philosophy: follow the
-                  questions that matter, make something real, learn from it, and
-                  keep improving. FieldKeeper, Astra AI, Geomancer, PatchCube,
-                  and CountLens all come from that same place — the desire to
-                  build tools that help people observe more, create more, and
-                  understand more.
-                </p>
-              </article>
+            <div class="principle-intro">
+              <p class="eyebrow">The builder’s rules</p>
+              <h2>Curious enough to imagine it. Practical enough to prove it.</h2>
+            </div>
+            <div class="principle-grid">
+              <article><span>01</span><h3>Start with the operator</h3><p>Understand the real workflow, constraints, and accountability before designing the elegant solution.</p></article>
+              <article><span>02</span><h3>Make uncertainty visible</h3><p>A trustworthy system admits what it does not know and preserves the evidence needed to resolve it.</p></article>
+              <article><span>03</span><h3>Build in honest stages</h3><p>Concept, prototype, validation, pilot, and release are different achievements—and should stay different.</p></article>
+            </div>
+          </div>
+        </section>
 
-              <article class="panel founder-story__panel founder-story__panel--principles">
-                <p class="kicker">The Builder’s Rule</p>
-                <h2>Build slow enough to care. Build bold enough to matter.</h2>
-                <p>
-                  The goal is not to chase every trend or make software louder.
-                  The goal is to make tools that feel intentional, useful, and
-                  worth the attention they ask for.
-                </p>
-              </article>
+        <section class="section section--principles">
+          <div class="section-frame focus-panel">
+            <div>
+              <p class="eyebrow">The company now</p>
+              <h2>A focused public story with serious work behind it.</h2>
+            </div>
+            <p>
+              Meranor Systems is centered publicly on AutonoTrek and UnoSolu. Earlier
+              software experiments and internal tools remain part of the company’s
+              learning history, but the front door now reflects the two platforms Josh
+              is actively shaping into a connected operational vision.
+            </p>
+          </div>
+        </section>
+
+        <section class="section section--cta">
+          <div class="section-frame">
+            <div class="cta-panel">
+              <p class="eyebrow">Meet the work</p>
+              <h2>See what Meranor is building from the operations floor outward.</h2>
+              <div class="button-row">
+                <a class="button button--primary" href="../autonotrek/">Explore AutonoTrek</a>
+                <a class="button button--secondary" href="../unosolu/">Explore UnoSolu</a>
+              </div>
             </div>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <div class="section-frame">
-          <div class="site-footer__bottom">
-            <p>&copy; <span data-current-year>2026</span> Meranor.</p>
-            <p>Build What Matters.</p>
-          </div>
+        <div class="section-frame site-footer__grid">
+          <div><p class="site-footer__brand">MERANOR <span>SYSTEMS</span></p><p>Independent software, AI, and technology development.</p></div>
+          <nav aria-label="Footer navigation"><a href="../">Meranor Systems</a><a href="../autonotrek/">AutonoTrek</a><a href="../unosolu/">UnoSolu</a><a href="../contact/">Contact</a></nav>
+          <p class="site-footer__legal">© <span data-current-year></span> Meranor Systems.</p>
         </div>
       </footer>
     </div>
@@ -144,4 +140,3 @@
     <script src="../app.js" defer></script>
   </body>
 </html>
-

@@ -1,0 +1,259 @@
+/* Meranor Systems visual-asset polish
+   Restores approved brand assets and replaces conceptual CSS stand-ins with
+   optimized product media while preserving all development-stage language. */
+
+/* Restore the original Meranor makers mark in every Systems header. */
+.brand__mark {
+  width: 2.85rem;
+  height: 2.85rem;
+  flex: 0 0 2.85rem;
+  aspect-ratio: auto;
+  border: 0;
+  background: url("assets/brand/makers-mark-vector.png") center / contain no-repeat;
+  transform: none;
+}
+
+.brand__mark::before,
+.brand__mark::after,
+.brand__mark > span {
+  display: none !important;
+}
+
+/* A shared media language for real product and interface assets. */
+.hero-console,
+.at-visual,
+.uno-dashboard,
+.platform-card__visual {
+  isolation: isolate;
+  background-color: #080b10;
+  background-repeat: no-repeat;
+  box-shadow: var(--shadow), inset 0 0 0 1px rgba(255, 255, 255, 0.025);
+}
+
+.hero-console::before,
+.hero-console::after,
+.uno-dashboard::after,
+.platform-card__visual::after {
+  position: absolute;
+  z-index: 3;
+  left: 1rem;
+  right: 1rem;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-pill);
+  background: rgba(5, 8, 12, 0.8);
+  backdrop-filter: blur(12px);
+  color: var(--text);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.35;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Company homepage: use the real current-foundation hardware direction. */
+body[data-page="home"] .hero-console {
+  position: relative;
+  min-height: 610px;
+  background-image:
+    radial-gradient(circle at 50% 42%, rgba(255, 154, 0, 0.14), transparent 43%),
+    url("assets/autonotrek/autonotrek-hand.webp");
+  background-position: center, center;
+  background-size: cover, auto 93%;
+}
+
+body[data-page="home"] .hero-console > * {
+  display: none !important;
+}
+
+body[data-page="home"] .hero-console::before {
+  content: "AutonoTrek · current foundation";
+  top: 1rem;
+  padding: 0.68rem 0.9rem;
+  color: var(--amber);
+  border-color: rgba(255, 154, 0, 0.34);
+}
+
+body[data-page="home"] .hero-console::after {
+  content: "MSB-1 + Hand · concept direction · active development";
+  bottom: 1rem;
+  padding: 0.68rem 0.9rem;
+}
+
+/* Homepage product cards: real product render and canonical Ask Uno visual. */
+.platform-card--autonotrek .platform-card__visual {
+  background-image:
+    radial-gradient(circle at 50% 45%, rgba(255, 154, 0, 0.15), transparent 44%),
+    url("assets/autonotrek/autonotrek-hand.webp");
+  background-position: center, center;
+  background-size: cover, auto 92%;
+}
+
+.platform-card--unosolu .platform-card__visual {
+  background-image:
+    linear-gradient(180deg, rgba(6, 9, 14, 0.08), rgba(6, 9, 14, 0.28)),
+    url("assets/unosolu/ask-uno-v2.webp");
+  background-position: center;
+  background-size: cover, contain;
+}
+
+.platform-card__visual > * {
+  display: none !important;
+}
+
+.platform-card--autonotrek .platform-card__visual::after {
+  content: "MSB-1 + Hand · current visual direction";
+  bottom: 1rem;
+  padding: 0.65rem 0.85rem;
+}
+
+.platform-card--unosolu .platform-card__visual::after {
+  content: "Ask Uno · canonical interface direction";
+  bottom: 1rem;
+  padding: 0.65rem 0.85rem;
+  color: var(--cyan);
+  border-color: rgba(56, 216, 255, 0.32);
+}
+
+/* AutonoTrek: replace the generated scanner silhouette with the ZIP render. */
+body[data-page="autonotrek"] .at-visual {
+  min-height: 650px;
+  background-image:
+    radial-gradient(circle at 50% 40%, rgba(255, 154, 0, 0.14), transparent 44%),
+    url("assets/autonotrek/autonotrek-hand.webp");
+  background-position: center, center;
+  background-size: cover, auto 94%;
+}
+
+body[data-page="autonotrek"] .at-visual > *:not(p) {
+  display: none !important;
+}
+
+body[data-page="autonotrek"] .at-visual::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 1rem;
+  left: 1rem;
+  width: 74px;
+  height: 52px;
+  border: 1px solid rgba(255, 154, 0, 0.28);
+  border-radius: 14px;
+  background: rgba(5, 8, 12, 0.76) url("assets/autonotrek/autonotrek-emblem.webp") center / contain no-repeat;
+  backdrop-filter: blur(12px);
+}
+
+body[data-page="autonotrek"] .at-visual > p {
+  z-index: 3;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  width: auto;
+  padding: 0.72rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-pill);
+  background: rgba(5, 8, 12, 0.82);
+  color: var(--text);
+  letter-spacing: 0.13em;
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+
+/* UnoSolu: replace the fabricated dashboard with the locked Ask Uno North Star. */
+body[data-page="unosolu"] .uno-dashboard {
+  position: relative;
+  display: block;
+  min-height: 500px;
+  background-image:
+    linear-gradient(180deg, rgba(6, 9, 14, 0.05), rgba(6, 9, 14, 0.22)),
+    url("assets/unosolu/ask-uno-v2.webp");
+  background-position: center;
+  background-size: cover, contain;
+}
+
+body[data-page="unosolu"] .uno-dashboard > * {
+  display: none !important;
+}
+
+body[data-page="unosolu"] .uno-dashboard::after {
+  content: "Canonical Ask Uno visual direction · concept interface";
+  bottom: 1rem;
+  padding: 0.68rem 0.9rem;
+  color: var(--cyan);
+  border-color: rgba(56, 216, 255, 0.34);
+}
+
+/* Keep media framing deliberate as the layout compresses. */
+@media (max-width: 1050px) {
+  body[data-page="home"] .hero-console,
+  body[data-page="autonotrek"] .at-visual,
+  body[data-page="unosolu"] .uno-dashboard {
+    width: 100%;
+    max-width: 760px;
+    margin-inline: auto;
+  }
+
+  body[data-page="home"] .hero-console {
+    min-height: 570px;
+  }
+
+  body[data-page="autonotrek"] .at-visual {
+    min-height: 620px;
+  }
+}
+
+@media (max-width: 780px) {
+  .brand__mark {
+    width: 2.55rem;
+    height: 2.55rem;
+    flex-basis: 2.55rem;
+  }
+
+  body[data-page="home"] .hero-console {
+    min-height: 500px;
+    background-size: cover, auto 91%;
+  }
+
+  body[data-page="autonotrek"] .at-visual {
+    min-height: 545px;
+    background-size: cover, auto 91%;
+  }
+
+  body[data-page="unosolu"] .uno-dashboard {
+    min-height: 410px;
+  }
+
+  .platform-card__visual {
+    min-height: 340px;
+  }
+}
+
+@media (max-width: 520px) {
+  body[data-page="home"] .hero-console {
+    min-height: 430px;
+  }
+
+  body[data-page="autonotrek"] .at-visual {
+    min-height: 470px;
+  }
+
+  body[data-page="unosolu"] .uno-dashboard {
+    min-height: 330px;
+  }
+
+  .platform-card__visual {
+    min-height: 300px;
+  }
+
+  .hero-console::before,
+  .hero-console::after,
+  .uno-dashboard::after,
+  .platform-card__visual::after,
+  body[data-page="autonotrek"] .at-visual > p {
+    left: 0.65rem;
+    right: 0.65rem;
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
+  }
+}

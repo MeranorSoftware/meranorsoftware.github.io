@@ -1,0 +1,13 @@
+/* Removes the amber presentation glow from the approved AutonoTrek hardware render. */
+
+body[data-page="home"] .hero-console {
+  background-size: 0 0, auto 93%;
+}
+
+.platform-card--autonotrek .platform-card__visual {
+  background-size: 0 0, auto 92%;
+}
+
+body[data-page="autonotrek"] .at-visual {
+  background-size: 0 0, auto 94%;
+}

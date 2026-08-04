@@ -18,6 +18,7 @@ if (assetPolishPages.has(currentPage)) {
   if (currentPage === "home" || currentPage === "autonotrek") {
     stylesheetPaths.push(`${relativePrefix}asset-media-autonotrek.css`);
     stylesheetPaths.push(`${relativePrefix}asset-media-neutral.css`);
+    stylesheetPaths.push(`${relativePrefix}asset-media-autonotrek-device-only.css`);
   }
 
   if (currentPage === "home" || currentPage === "unosolu") {

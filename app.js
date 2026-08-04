@@ -28,15 +28,7 @@ if (assetPolishPages.has(currentPage)) {
 
   if (currentPage === "home" || currentPage === "tiny-portfolio") {
     stylesheetPaths.push(`${relativePrefix}tiny-portfolio.css`);
-  }
-
-  if (currentPage === "home") {
-    stylesheetPaths.push("tiny-portfolio-media-icon.css");
-  }
-
-  if (currentPage === "tiny-portfolio") {
-    stylesheetPaths.push("../tiny-portfolio-media-hero.css");
-    stylesheetPaths.push("../tiny-portfolio-media-overview.css");
+    stylesheetPaths.push(`${relativePrefix}tiny-portfolio-media-icon.css`);
   }
 
   stylesheetPaths.forEach((href) => {
@@ -114,6 +106,17 @@ if (currentPage === "home") {
       `,
     );
   }
+}
+
+if (currentPage === "tiny-portfolio") {
+  document.querySelectorAll(".tp-hero-media, .tp-showcase-media").forEach((container) => {
+    if (!container.querySelector(".tp-page-icon")) {
+      const icon = document.createElement("div");
+      icon.className = "tp-home-icon tp-page-icon";
+      icon.setAttribute("aria-hidden", "true");
+      container.prepend(icon);
+    }
+  });
 }
 
 if (assetPolishPages.has(currentPage)) {
